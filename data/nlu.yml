@@ -1,0 +1,162 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+-intent: identify_snake
+examples: |
+    - identify this snake
+    - what snake is this?
+    - analyze the snake image
+    - analyze the image uploaded
+    - what is this?
+    - can you identify this snake
+    - what snake is in this image
+    - tell me the snake name
+    - what species is this snake
+
+-intent: upload_image
+examples: |
+    - I had uploaded the image
+    - here is the image
+    - check this this image
+    - analyze the image
+    - here is the image
+    - image uploaded
+    - I want to upload an image
+
+-intent: snake_details
+examples: |
+    - can I get some details about a snake?
+    - can i know about this one
+    - let me know about it
+    - tell me about this snake
+    - tell me about [cobra](snake_name)
+    - information about [python](snake_name)
+    - details of [russell's viper](snake_name)
+    - give me facts about [krait](snake_name)
+
+-intent: snake_habitat
+examples: |
+    - where does [cobra](snake_name) live
+    - habitat of [python](snake_name)
+    - where can I find [krait](snake_name)
+    - living area of [viper](snake_name)
+    - which area this snake lives
+    - which environment condition this snake live
+
+-intent: venom_info
+examples: |
+    - is [cobra](snake_name) poisonous
+    - is this snake dangerous
+    - is [python](snake_name) venomous
+    - is this snake harmful
+    - can this snake kill a human
+    - is this venomous
+    - what is the poisonous level
+    - what type of poison this snake have
+
+-intent: fall_back
+examples: |
+    - asdfghjkl
+    - qwertyuiop
+    - I don't know what to say
+    - random text
+    - sorry i cant get you
+    - sorry
+    - please reupload
+
+-intent: safety_tips
+examples: |
+    - what can i do
+    - first aid for [cobra](snake_name) bid
+    - is anti-venom available for this snake's poison
+    - how to catch this snake
+    - to who i need to contact if i see a snake

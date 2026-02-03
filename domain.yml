@@ -1,0 +1,62 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - identify_snake
+  - upload_image
+  - snake_details
+  - snake_habitat
+  - venom_info
+  - fall_back
+  - safety_tips
+
+
+entities:
+  - snake_name
+
+
+slots:
+  snake_name:
+    type: text
+    influence_conversation: true
+
+
+responses:
+  utter_greet:
+  - text: "Hey! Welcome to the Snake identification system"
+
+  utter_help:
+  - text: "How can i help you?"
+
+  utter_ask_image:
+    - text: "Please upload a clear image of the snake."
+  
+  utter_snake_details:
+  - text: "Insert the name of the snake: "
+
+  utter_fallback:
+    - text: "Sorry, I couldn't understand that. Please try again or upload a snake image."
+    
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+actions:
+  - action_process_snake_image
+  - action_get_snake_info
+  - action_venom_info
+  - action_default_fallback
