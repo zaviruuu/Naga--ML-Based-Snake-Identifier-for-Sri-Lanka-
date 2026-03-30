@@ -1,4 +1,4 @@
-🐍 Nāga – AI-Based Snake Identification System
+🐍 Nāga – ML-Based Snake Identification System
 
 📌 Overview
 
@@ -66,8 +66,8 @@ Nāga/
 
 1️⃣ Clone the Repository
 
-git clone https://github.com/your-username/naga-project.git
-cd naga-project
+git clone https://github.com/zaviruuu/Naga--ML-Based-Snake-Identifier-for-Sri-Lanka-.git
+cd Naga--ML-Based-Snake-Identifier-for-Sri-Lanka-
 
 
 
