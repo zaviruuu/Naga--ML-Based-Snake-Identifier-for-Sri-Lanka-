@@ -1,0 +1,20 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-snake",
+      "2": "I-snake",
+      "3": "L-snake",
+      "4": "U-snake",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-snake": 1,
+      "I-snake": 2,
+      "L-snake": 3,
+      "U-snake": 4,
+      "O": 0
+    },
+    "num_tags": 5
+  }
+]

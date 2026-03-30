@@ -1,0 +1,136 @@
+{
+  "cobra": {
+    "scientific_name": "Naja naja",
+    "danger_level": "9",
+    "appearance": "Medium length snake hood spreading head round pupils black or brown body",
+    "habitat": "Gardens paddy fields human settlements termite mounds",
+    "first_aid": "Keep victim calm immobilize limb remove tight items transport to hospital immediately do not cut wound",
+    "venom": "Neurotoxic venom affects breathing"
+  },
+
+  "russell_viper": {
+    "scientific_name": "Daboia russelii",
+    "danger_level": "10",
+    "appearance": "Heavy body three rows of dark oval spots triangular head",
+    "habitat": "Dry grasslands plantations farmland",
+    "first_aid": "Immobilize patient keep lying flat urgent hospital treatment required",
+    "venom": "Hemotoxic causes bleeding and kidney damage"
+  },
+
+  "krait": {
+    "scientific_name": "Bungarus caeruleus",
+    "danger_level": "10",
+    "appearance": "Glossy black body thin white bands narrow head",
+    "habitat": "Houses at night villages rodent areas",
+    "first_aid": "Do not wait for symptoms immediate hospital transport breathing support may be needed",
+    "venom": "Powerful neurotoxin causes paralysis"
+  },
+
+  "python": {
+    "scientific_name": "Python molurus",
+    "danger_level": "2",
+    "appearance": "Very long thick body brown blotches non triangular head",
+    "habitat": "Forests marshes rivers",
+    "first_aid": "Non venomous bites clean wound and seek medical care if deep",
+    "venom": "Non venomous constrictor"
+  },
+
+  "hump_nosed_viper": {
+    "scientific_name": "Hypnale hypnale",
+    "danger_level": "8",
+    "appearance": "Small, triangular head, upturned snout, brown with darker patterns",
+    "habitat": "Wet zone forests home gardens plantations",
+    "first_aid": "Hospital treatment needed, causes local tissue damage",
+    "venom": "Cytotoxic, causes swelling and pain"
+  },
+
+  "green_pit_viper": {
+    "scientific_name": "Trimeresurus trigonocephalus",
+    "danger_level": "6",
+    "appearance": "Bright green body, triangular head, heat-sensing pits",
+    "habitat": "Forests bushes sometimes in gardens",
+    "first_aid": "Seek medical care, pain and swelling common",
+    "venom": "Hemotoxic, less lethal than other vipers"
+  },
+
+  "wolf_snake": {
+    "scientific_name": "Lycodon aulicus",
+    "danger_level": "1",
+    "appearance": "Small, dark with light bands, resembles krait but harmless",
+    "habitat": "Houses gardens under rocks",
+    "first_aid": "Clean wound, no antivenom needed",
+    "venom": "Non-venomous"
+  },
+
+ "saw_scaled_viper": {
+  "scientific_name": "Echis carinatus",
+  "danger_level": "9",
+  "appearance": "Small stout body, sandy or brown color with zigzag or chain pattern, rough keeled scales, produces rasping sound when coiled",
+  "habitat": "Dry zones, sandy soil, scrublands, agricultural fields",
+  "first_aid": "Immobilize patient, keep calm, remove tight items, transport immediately to hospital for antivenom",
+  "venom": "Highly venomous"
+},
+
+"indian_rat_snake": {
+  "scientific_name": "Ptyas mucosa",
+  "danger_level": "1",
+  "appearance": "Large slender snake, brown or yellowish with faint cross bars, very fast moving",
+  "habitat": "Gardens, paddy fields, roofs, near water and houses",
+  "first_aid": "Clean wound with soap and water, no antivenom needed",
+  "venom": "Non-venomous"
+},
+
+"banded_kukri_snake": {
+  "scientific_name": "Oligodon arnensis",
+  "danger_level": "2",
+  "appearance": "Small snake with distinct dark bands on light brown body, short head with sharp kukri shaped teeth",
+  "habitat": "Leaf litter, gardens, under logs and stones",
+  "first_aid": "Wash bite area and disinfect, no antivenom needed",
+  "venom": "Non-venomous"
+},
+
+"trinket_snake": {
+  "scientific_name": "Coelognathus helena",
+  "danger_level": "2",
+  "appearance": "Yellowish or light brown with black ladder like markings along body",
+  "habitat": "Rocky areas, buildings, roofs and plantations",
+  "first_aid": "Clean wound, apply antiseptic",
+  "venom": "Non-venomous"
+},
+
+"black_spined_snake": {
+  "scientific_name": "Sibynophis subpunctatus",
+  "danger_level": "1",
+  "appearance": "Slender brown snake with tiny black spots and smooth shiny scales",
+  "habitat": "Forests, gardens and leaf litter",
+  "first_aid": "No treatment required except basic wound cleaning",
+  "venom": "Non-venomous"
+},
+
+"brown_vine_snake": {
+  "scientific_name": "Ahaetulla pulverulenta",
+  "danger_level": "5",
+  "appearance": "Very thin twig like body, pointed head and horizontal pupils, brown coloration",
+  "habitat": "Bushes, shrubs and trees",
+  "first_aid": "Wash bite area and observe, hospital visit if swelling or allergic reaction occurs",
+  "venom": "Mildly venomous"
+},
+
+"green_vine_snake": {
+  "scientific_name": "Ahaetulla nasuta",
+  "danger_level": "5",
+  "appearance": "Bright green slender body, pointed snout, binocular vision appearance",
+  "habitat": "Trees, hedges and home gardens",
+  "first_aid": "Clean wound and monitor, medical observation recommended",
+  "venom": "Mildly venomous"
+},
+
+"olive_keelback": {
+  "scientific_name": "Atretium schistosum",
+  "danger_level": "2",
+  "appearance": "Olive green body with keeled scales, yellow underside, aquatic snake",
+  "habitat": "Rivers, ponds, paddy fields and canals",
+  "first_aid": "Wash bite area thoroughly, no antivenom required",
+  "venom": "Non-venomous"
+}
+}

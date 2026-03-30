@@ -1,0 +1,82 @@
+# domain.yml
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - identify_snake
+  - snake_details
+  - venom_info
+  - ask_about_habitat
+  - ask_about_appearance
+  - ask_about_safety
+  - snake_safety_general
+  - snake_bite_emergency
+  - snake_help
+  - harmful_snake_query
+  - ask_general_question
+  - ask_more_info
+  - nlu_fallback
+  - out_of_scope
+  - image_uploaded
+
+entities:
+  - snake_name
+
+slots:
+  snake:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: snake_name
+  
+  current_snake:
+    type: text
+    influence_conversation: true
+    initial_value: null
+    mappings:
+      - type: custom
+  
+  awaiting_image:
+    type: bool
+    influence_conversation: false
+    initial_value: false
+    mappings:
+      - type: custom
+  
+  awaiting_followup:
+    type: bool
+    influence_conversation: false
+    initial_value: false
+    mappings:
+      - type: custom
+
+actions:
+  - action_identify_snake
+  - action_answer_snake_question
+  - action_get_snake_info
+  - action_general_safety
+  - action_bite_emergency
+  - action_default_fallback
+
+responses:
+  utter_greet:
+    - text: "Hello. I am your snake expert assistant. How can I help you today?"
+    - text: "Hi there. I can help identify snakes, answer questions about them, and provide safety information. What would you like to know?"
+    
+  utter_goodbye:
+    - text: "Stay safe around snakes. Goodbye."
+    - text: "Remember, if you encounter a snake, stay calm and call wildlife authorities at 1990. Goodbye."
+    
+  utter_harmful_query_response:
+    - text: "Snakes are protected wildlife. Please do not attempt to harm them. If you have a snake issue, call wildlife authorities at 1990 for safe removal."
+    
+  utter_how_can_i_help:
+    - text: "I can help you with identifying snakes from photos, information about specific snakes, snake safety and first aid, and venom and habitat details. What would you like to know?"
+    
+  utter_out_of_scope:
+    - text: "I specialize in snake-related questions. Please ask me about snakes, their behavior, habitat, or safety."
+    
+  utter_default:
+    - text: "I am not sure I understand. I specialize in snake-related questions. Try asking about specific snakes or upload a photo for identification."

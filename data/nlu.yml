@@ -1,0 +1,189 @@
+# data/nlu.yml
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - hi there
+    - good evening
+    - howdy
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - thanks bye
+    - take care
+    - bye bye
+
+- intent: identify_snake
+  examples: |
+    - identify this snake
+    - what snake is this
+    - can you identify this snake
+    - snake identification
+    - what kind of snake is this
+    - tell me what snake this is
+    - is this a snake
+    - what species is this
+
+- intent: snake_details
+  examples: |
+    - tell me about [cobra](snake_name)
+    - information about [python](snake_name)
+    - details of [krait](snake_name)
+    - give me information about [cobra](snake_name)
+    - can you give details about [krait](snake_name)
+    - [cobra](snake_name) information
+    - tell me more about [python](snake_name)
+    - facts about [viper](snake_name)
+    - about [rattlesnake](snake_name)
+    - [anaconda](snake_name) details
+
+- intent: venom_info
+  examples: |
+    - is [cobra](snake_name) poisonous
+    - is this snake dangerous
+    - is [python](snake_name) venomous
+    - is this snake harmful
+    - what is the venom type
+    - is it venomous
+    - how dangerous is this snake
+    - venom details
+    - tell me about venom
+    - does this snake have venom
+    - is it deadly
+    - can it kill you
+
+- intent: ask_about_habitat
+  examples: |
+    - where does this snake live
+    - what is its habitat
+    - where can I find this snake
+    - does it live near houses
+    - habitat information
+    - where is it found
+    - where do they live
+    - natural habitat
+
+- intent: ask_about_appearance
+  examples: |
+    - what does it look like
+    - how to identify this snake
+    - what color is it
+    - how big does it get
+    - describe its appearance
+    - how to identify it
+    - tell me about its appearance
+    - appearance
+    - what size is it
+
+- intent: ask_about_safety
+  examples: |
+    - what should I do if I see this snake
+    - safety tips for this snake
+    - is it safe to be near this snake
+    - how to stay safe around this snake
+    - is this snake aggressive
+    - will it attack me
+    - how to avoid being bitten
+
+- intent: snake_safety_general
+  examples: |
+    - what should I do if I see a snake
+    - how to stay safe from snakes
+    - safety tips for snakes
+    - snake in my garden what to do
+    - how to avoid snake attack
+    - snake in my house
+    - snake prevention tips
+    - how to keep snakes away
+
+- intent: snake_bite_emergency
+  examples: |
+    - someone got bitten by a snake
+    - what to do after a snake bite
+    - first aid for snake bite
+    - snake bite treatment
+    - emergency steps after snake bite
+    - snake bite help
+    - bitten by snake
+    - snake bite first aid
+
+- intent: snake_help
+  examples: |
+    - snake help
+    - help snake
+    - snake problem
+    - there is a snake
+    - I need help about a snake
+    - snake in my property
+    - urgent snake issue
+
+- intent: harmful_snake_query
+  examples: |
+    - how to kill it
+    - how to kill this snake
+    - how to kill the snake
+    - how to trap it
+    - how to catch it
+    - get rid of this snake
+    - kill the snake
+    - how to poison snakes
+
+- intent: ask_general_question
+  examples: |
+    - what do snakes eat
+    - how long do snakes live
+    - do snakes hibernate
+    - what is the largest snake
+    - how fast can snakes move
+    - do snakes have ears
+    - how do snakes smell
+    - what is the most venomous snake
+
+- intent: ask_more_info
+  examples: |
+    - tell me more
+    - more details
+    - anything else
+    - additional information
+    - what else
+    - give me more facts
+    - continue
+    - more please
+
+- intent: image_uploaded
+  examples: |
+    - image
+    - uploaded
+    - here is the image
+    - photo
+    - picture
+    - this is the photo
+
+- intent: out_of_scope
+  examples: |
+    - what is the weather like
+    - tell me a joke
+    - how to cook pasta
+    - what is the stock market
+    - play music
+    - what time is it
+    - who won the game
+    - tell me a story
+    - how to code in python
+
+- intent: nlu_fallback
+  examples: |
+    - asdfghjkl
+    - random text
+    - I don't know
+    - what
+    - huh

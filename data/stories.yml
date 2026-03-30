@@ -1,0 +1,48 @@
+# data/stories.yml
+version: "3.1"
+
+stories:
+  - story: greet and ask about snake
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: snake_details
+        entities:
+          - snake_name: "cobra"
+      - action: action_get_snake_info
+
+  - story: identify snake from image
+    steps:
+      - intent: identify_snake
+      - action: action_identify_snake
+
+  - story: follow-up questions after identification
+    steps:
+      - intent: identify_snake
+      - action: action_identify_snake
+      - intent: venom_info
+      - action: action_answer_snake_question
+
+  - story: ask about snake without prior context
+    steps:
+      - intent: snake_details
+        entities:
+          - snake_name: "krait"
+      - action: action_get_snake_info
+
+  - story: general snake question
+    steps:
+      - intent: ask_general_question
+      - action: action_answer_snake_question
+
+  - story: emergency and safety
+    steps:
+      - intent: snake_bite_emergency
+      - action: action_bite_emergency
+      - intent: snake_safety_general
+      - action: action_general_safety
+
+  - story: out of scope handling
+    steps:
+      - intent: out_of_scope
+      - action: utter_out_of_scope

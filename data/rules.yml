@@ -1,0 +1,96 @@
+# data/rules.yml
+version: "3.1"
+
+rules:
+  - rule: greet rule
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: goodbye rule
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: process uploaded image
+    condition:
+      - slot_was_set:
+          - awaiting_image: true
+    steps:
+      - intent: image_uploaded
+      - action: action_identify_snake
+
+  - rule: identify snake direct
+    steps:
+      - intent: identify_snake
+      - action: action_identify_snake
+
+  - rule: handle kill queries
+    steps:
+      - intent: harmful_snake_query
+      - action: utter_harmful_query_response
+
+  - rule: general safety info
+    steps:
+      - intent: snake_safety_general
+      - action: action_general_safety
+
+  - rule: emergency response
+    steps:
+      - intent: snake_bite_emergency
+      - action: action_bite_emergency
+
+  - rule: handle snake help requests
+    steps:
+      - intent: snake_help
+      - action: utter_how_can_i_help
+
+  - rule: answer snake details with entity
+    steps:
+      - intent: snake_details
+      - action: action_get_snake_info
+
+  - rule: answer venom questions
+    steps:
+      - intent: venom_info
+      - action: action_answer_snake_question
+
+  - rule: answer habitat questions
+    steps:
+      - intent: ask_about_habitat
+      - action: action_answer_snake_question
+
+  - rule: answer appearance questions
+    steps:
+      - intent: ask_about_appearance
+      - action: action_answer_snake_question
+
+  - rule: answer safety questions
+    steps:
+      - intent: ask_about_safety
+      - action: action_answer_snake_question
+
+  - rule: answer more info questions
+    steps:
+      - intent: ask_more_info
+      - action: action_answer_snake_question
+
+  - rule: answer general snake questions
+    steps:
+      - intent: ask_general_question
+      - action: action_answer_snake_question
+
+  - rule: handle out of scope
+    steps:
+      - intent: out_of_scope
+      - action: utter_out_of_scope
+
+  - rule: handle fallback
+    steps:
+      - intent: nlu_fallback
+      - action: action_default_fallback
+
+  - rule: answer snake question
+    steps:
+      - intent: snake_question
+      - action: action_answer_snake_question
